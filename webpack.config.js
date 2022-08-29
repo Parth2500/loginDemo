@@ -28,12 +28,6 @@ module.exports = {
     new ModuleFederationPlugin({
         library: { type: "module" },
 
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-          "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
-        },
-
         // For remotes (please adjust)
         name: "loginDemo",
         filename: "remoteEntry.js",
